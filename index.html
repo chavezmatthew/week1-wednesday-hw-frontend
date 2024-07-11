@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <form action="/submit" method="post">
+        <label for="user-email">Email:</label>
+        <input type="email" id="user-email" name="user-email" placeholder="Enter your email" required aria-label="Email">
+        <button type="submit">Submit</button>
+
+        <br/><br/>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" required min="1" max="10000000" step="1" aria-label="Quantity">
+
+        <br/><br/>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="name" placeholder="Enter date" required aria-label="Date">
+
+        <br/><br/>
+
+        <label for="rating">Rating:</label>
+        <input type="range" id="rating" name="rating" placeholder="Enter rating" min="0" max="5" value="0" aria-label="Rating">
+
+        <br/><br/>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color" placeholder="Enter a color" value="#0000FF" aria-label="Color">
+
+        <br/><br/>
+
+        <label for="favorite-programming-language">Favorite Programming Language:</label>
+        <select id="language" name="language" required aria-label="Programming Language">
+            <option value="" disabled selected>Select a language</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="c/c++">C/C++</option>
+            <option value="java">Java</option>
+            <option value="ruby">Ruby</option>
+        </select>
+        
+        <br/>
+
+        <label for="experience-level">Experience Level:</label>
+        <input type="radio" id="beginner" name="experience" value="beginner" required>
+        <label for="beginner">Beginner</label>
+        <input type="radio" id="intermediate" name="experience" value="intermediate">
+        <label for="intermediate">Intermediate</label>
+        <input type="radio" id="advanced" name="experience" value="advanced">
+        <label for="advanced">Advanced</label>
+
+        <br/><br/>
+
+        <label for="platform">Preferred Developement Platform:</label>
+        <input type="checkbox" id="web" name="platform" value="yes">
+        <label for="web">Web</label>
+        <input type="checkbox" id="mobile" name="platform" value="yes">
+        <label for="mobile">Mobile</label>
+        <input type="checkbox" id="desktop" name="platform" value="yes">
+        <label for="desktop">Desktop</label>
+    </form>
+</body>
+</html>
